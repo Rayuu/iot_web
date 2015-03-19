@@ -1,0 +1,79 @@
+$(document).ready(function()
+{
+/*	$("#btn").on("click",function()
+	{
+		$.post("action.php",{name:$("#namevalue").val()},function(data)
+		{
+			$("#result").html(data);
+		}).error(function()
+		{
+			$("#result").text("error");
+		});
+	});*/
+//	$("#text1").load("text1.txt #p1");
+	$("#off1").on("click",function()
+	{
+		$.post("action.php",{vv1:$("#v1").val()},function(data1)
+		{
+			$("#1").html(data1);
+		}).error(function()
+		{
+			$("#1").text("error");
+		});
+		
+	});
+	$("#on1").on("click",function()
+	{
+		$.post("control.php",{vv2:$("#v2").val()},function(data2)
+		{
+			$("#1").html(data2);
+		}).error(function()
+		{
+			$("#1").text("error");
+		});
+	});	
+
+	$("#off2").on("click",function()
+	{
+		$.post("action1.php",{vv3:$("#v3").val()},function(data1)
+		{
+			$("#1").html(data1);
+		}).error(function()
+		{
+			$("#1").text("error");
+		});
+		
+	});
+	$("#on2").on("click",function()
+	{
+		$.post("control1.php",{vv4:$("#v4").val()},function(data2)
+		{
+			$("#1").html(data2);
+		}).error(function()
+		{
+			$("#1").text("error");
+		});
+	});	
+
+	$("#off3").on("click",function()
+	{
+		$.post("action2.php",{vv5:$("#v5").val()},function(data1)
+		{
+			$("#1").html(data1);
+		}).error(function()
+		{
+			$("#1").text("error");
+		});
+		
+	});
+	$("#on3").on("click",function()
+	{
+		$.post("control2.php",{vv6:$("#v6").val()},function(data2)
+		{
+			$("#1").html(data2);
+		}).error(function()
+		{
+			$("#1").text("error");
+		});
+	});
+});
